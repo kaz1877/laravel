@@ -20,3 +20,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('layout');
 });
+
+Route::get('/post1', function () {
+    return view('post');
+}); 
