@@ -15,7 +15,7 @@
                 <p>ここがサイドバー</p>
             </div>
             <div class="content">
-                <p>ここがコンテンツエリア</p>
+                @yield('content')
             </div>
             <div class="footer">
                 <p>お問い合わせ</p>
