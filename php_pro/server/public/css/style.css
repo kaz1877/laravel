@@ -68,7 +68,7 @@ hr{margin: 20px 0;}
 .content{
     text-align: center;
     width:690px;
-    min-height:500px;
+    /* min-height:500px; */
     background-color: #ffffff;
     border: 5px solid  #707aff;
     border-radius: 10px;
@@ -82,3 +82,21 @@ hr{margin: 20px 0;}
     text-align: center;
     padding: 10px;
 } 
+
+.content_wrapper{
+    width: 1000px;
+    min-height:500px;
+    text-align: center;
+}
+
+.content2{
+    display: inline-block;
+    text-align: left;
+    width:690px;
+    min-height:500px;
+    background-color: #ffffff;
+    border: 5px solid  #707aff;
+    border-radius: 10px;
+    margin: 20px 0;
+    padding: 10px;
+}

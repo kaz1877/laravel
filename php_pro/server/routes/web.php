@@ -1,22 +1,30 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
-|
-*/
+use App\Http\Controllers\FormController;
 
 // Route::get('/', function () {
 //     return view('welcome');
 // });
 
-Route::get('/', function () {
-    return view('layout');
-});
+// Route::get('/', function () {
+//     return view('layout');
+// });
+
+// Route::get('/post1', function () {
+//     return view('post');
+// }); 
+
+// Route::get('/top', function () {
+//     return view('top');
+// });
+
+
+// 投稿ページを表示
+Route::get('/create', [FormController::class,'postpage']);
+// 投稿をコントローラーに送信
+Route::post('/newpostsend', [FormController::class,'savenew']); 
+
+Route::get('/index',[FormController::class,'index']);
+
+Route::get('/show/{id}',[FormController::class,'show']);
